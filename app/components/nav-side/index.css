@@ -1,0 +1,51 @@
+.nav-side {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 999;
+  background-color: #222;
+  border-top: 1px solid #111;
+  transition: width 0.15s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .nav-side.fold {
+    width: 64px; }
+  .nav-side .ant-menu-item {
+    padding-left: 41px; }
+    .nav-side .ant-menu-item .anticon.first-child {
+      margin-right: 15px;
+      margin-left: -15px;
+      transform: scale(0.7); }
+    .nav-side .ant-menu-item .anticon.last-child {
+      float: right;
+      margin-top: 16px;
+      transform: scale(0.9); }
+
+.toggle-button {
+  position: absolute;
+  top: -34px;
+  left: 185px;
+  background-color: #222;
+  border: none; }
+  .toggle-button:hover {
+    background-color: #222; }
+  .toggle-button.focus {
+    background-color: #222; }
+
+.ant-menu-dark {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #222; }
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background-color: #1a1a1a; }
+
+.nav-side .ant-menu-sub > .ant-menu-item,
+.nav-side .ant-menu-submenu-title {
+  height: 44px;
+  line-height: 44px;
+  font-size: 13px; }
+
+.ant-menu-dark .ant-menu-sub {
+  background-color: #222; }
+
+/*# sourceMappingURL=index.css.map */
