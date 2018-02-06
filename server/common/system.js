@@ -2,9 +2,9 @@ let os = require('os')
 
 module.exports.getClientIP = function (req) {
   return req.headers['x-forwarded-for'] ||
-    req.connection._remoteAddress ||
-    req.socket._remoteAddress ||
-    req.connection.socket._remoteAddress
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress
 }
 
 module.exports.getServerIP = function () {

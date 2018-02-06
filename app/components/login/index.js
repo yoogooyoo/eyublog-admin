@@ -4,6 +4,8 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd'
 
 import './index.scss'
 
+const PropTypes = require('prop-types')
+
 class LoginForm extends Component {
   static contentTypes = {
     router: React.PropTypes.object
@@ -86,7 +88,7 @@ class LoginForm extends Component {
 }
 
 LoginForm.contextTypes = {
-  router: Object
+  router: PropTypes.object
 }
 
 const WrappedLoginForm = Form.create()(LoginForm)
